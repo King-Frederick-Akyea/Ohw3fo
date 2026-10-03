@@ -1,0 +1,16 @@
+{
+  "_note": "Official contacts the assistant is allowed to show. Anything else in a reply is flagged as unverified. Team: double-check every entry against the providers' official websites before demo day.",
+  "phones": [
+    { "number": "*170#", "name": "MTN MoMo menu (USSD)" },
+    { "number": "100", "name": "MTN Ghana customer service" },
+    { "number": "*110#", "name": "Telecel Cash / AT Money menu (USSD)" }
+  ],
+  "domains": [
+    "mtn.com.gh",
+    "telecel.com.gh",
+    "bog.gov.gh",
+    "nia.gov.gh",
+    "gov.gh"
+  ],
+  "brand_words": ["momo", "mtn", "telecel", "airteltigo", "bank", "gcb", "ecobank", "ghanacard", "nia", "bog", "gov"]
+}
