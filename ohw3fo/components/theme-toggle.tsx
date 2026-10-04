@@ -24,13 +24,13 @@ export function ThemeToggle() {
   };
 
   if (!theme) {
-    return <div className="size-9" />; // Placeholder to avoid hydration mismatch
+    return <div className="size-9" />;
   }
 
   return (
     <button
       onClick={toggleTheme}
-      className="inline-flex size-9 items-center justify-center rounded-lg border border-line bg-surface text-ink-soft shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:text-ink hover:shadow-md active:scale-95"
+      className="inline-flex size-9 items-center justify-center rounded-lg border border-line bg-surface text-ink-soft shadow-sm transition-colors hover:text-ink hover:bg-sunken active:scale-95"
       aria-label="Toggle theme"
     >
       {theme === "light" ? <Moon className="size-4.5" /> : <Sun className="size-4.5" />}

@@ -8,81 +8,81 @@
   for every message a user reads. All three draw Twi letters (ɛ ɔ Ɔ Ɛ) and the cedi sign.
 */
 :root {
-  --paper: #f8fafc;
-  --surface: rgba(255, 255, 255, 0.7);
-  --sunken: #f1f5f9;
-  --line: rgba(226, 232, 240, 0.6);
-  --line-strong: #cbd5e1;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --ink-faint: #64748b;
-  --forest: #10b981; /* Vibrant Emerald */
+  --paper: #f4f4f5;
+  --surface: #ffffff;
+  --sunken: #e4e4e7;
+  --line: #d4d4d8;
+  --line-strong: #a1a1aa;
+  --ink: #18181b;
+  --ink-soft: #52525b;
+  --ink-faint: #71717a;
+  --forest: #047857;
   --forest-ink: #ffffff;
   --forest-soft: #d1fae5;
-  --gold: #8b5cf6; /* Vibrant Violet */
-  --gold-soft: #ede9fe;
-  --danger: #f43f5e;
+  --gold: #b45309;
+  --gold-soft: #fef3c7;
+  --danger: #be123c;
   --danger-soft: #ffe4e6;
-  --safe: #059669;
-  --safe-soft: #a7f3d0;
-  --warn: #f59e0b;
+  --safe: #047857;
+  --safe-soft: #d1fae5;
+  --warn: #b45309;
   --warn-soft: #fef3c7;
-  --neutral-soft: #e2e8f0;
-  --shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-  --overlay: rgba(15, 23, 42, 0.4);
+  --neutral-soft: #f4f4f5;
+  --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+  --overlay: rgba(24, 24, 27, 0.4);
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #020617;
-    --surface: rgba(15, 23, 42, 0.6);
-    --sunken: #0b1120;
-    --line: rgba(30, 41, 59, 0.5);
-    --line-strong: #334155;
-    --ink: #f8fafc;
-    --ink-soft: #94a3b8;
-    --ink-faint: #64748b;
+    --paper: #09090b;
+    --surface: #18181b;
+    --sunken: #000000;
+    --line: #27272a;
+    --line-strong: #3f3f46;
+    --ink: #fafafa;
+    --ink-soft: #a1a1aa;
+    --ink-faint: #71717a;
     --forest: #10b981;
-    --forest-ink: #ffffff;
+    --forest-ink: #022c22;
     --forest-soft: rgba(16, 185, 129, 0.15);
-    --gold: #a78bfa;
-    --gold-soft: rgba(139, 92, 246, 0.15);
+    --gold: #fbbf24;
+    --gold-soft: rgba(245, 158, 11, 0.15);
     --danger: #fb7185;
     --danger-soft: rgba(244, 63, 94, 0.15);
     --safe: #34d399;
     --safe-soft: rgba(52, 211, 153, 0.15);
     --warn: #fbbf24;
     --warn-soft: rgba(251, 191, 36, 0.15);
-    --neutral-soft: rgba(30, 41, 59, 0.5);
-    --shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --neutral-soft: #27272a;
+    --shadow: 0 1px 2px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.25);
     --overlay: rgba(0, 0, 0, 0.7);
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --paper: #020617;
-  --surface: rgba(15, 23, 42, 0.6);
-  --sunken: #0b1120;
-  --line: rgba(30, 41, 59, 0.5);
-  --line-strong: #334155;
-  --ink: #f8fafc;
-  --ink-soft: #94a3b8;
-  --ink-faint: #64748b;
+  --paper: #09090b;
+  --surface: #18181b;
+  --sunken: #000000;
+  --line: #27272a;
+  --line-strong: #3f3f46;
+  --ink: #fafafa;
+  --ink-soft: #a1a1aa;
+  --ink-faint: #71717a;
   --forest: #10b981;
-  --forest-ink: #ffffff;
+  --forest-ink: #022c22;
   --forest-soft: rgba(16, 185, 129, 0.15);
-  --gold: #a78bfa;
-  --gold-soft: rgba(139, 92, 246, 0.15);
+  --gold: #fbbf24;
+  --gold-soft: rgba(245, 158, 11, 0.15);
   --danger: #fb7185;
   --danger-soft: rgba(244, 63, 94, 0.15);
   --safe: #34d399;
   --safe-soft: rgba(52, 211, 153, 0.15);
   --warn: #fbbf24;
   --warn-soft: rgba(251, 191, 36, 0.15);
-  --neutral-soft: rgba(30, 41, 59, 0.5);
-  --shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --neutral-soft: #27272a;
+  --shadow: 0 1px 2px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.25);
   --overlay: rgba(0, 0, 0, 0.7);
   color-scheme: dark;
 }
@@ -121,16 +121,10 @@ body {
 }
 
 body {
-  background: radial-gradient(circle at top left, var(--paper), var(--sunken));
-  background-attachment: fixed;
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-}
-
-.bg-surface {
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
 }
 
 h1,
