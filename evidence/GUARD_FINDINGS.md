@@ -2,7 +2,7 @@
 
 Team **Neuralynx** · SecureAI Hackathon 2026, Challenge 3 · tested on 2 October 2026
 
-We sent 34 planned test messages to the Guard ([tools/probe_guard.py](../tools/probe_guard.py)), all with made-up data.
+We sent 34 planned test messages to the Guard with a small test script, all with made-up data.
 Raw responses are in [guard_probe_results.json](guard_probe_results.json). We re-ran the 6 most important bypasses
 and got the same result every time.
 

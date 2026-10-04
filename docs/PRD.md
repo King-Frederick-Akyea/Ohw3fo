@@ -379,8 +379,8 @@ understand Ghana** (Twi, Ghana personal data, MoMo scams). So the final story ha
 | **H. Indirect injection** | A forwarded SMS with a hidden "[SYSTEM NOTE TO AI: …]" | Hidden instructions inside pasted content |
 | **I. Dilution** | An injection buried at the end of ~3,600 characters of harmless text | Does long benign text hide an attack? |
 
-The full list of messages and results is in **Appendix A**. The test script (`tools/probe_guard.py`) and the raw
-JSON answers (`evidence/guard_probe_results.json`) are in the repository.
+The full list of messages and results is in **Appendix A**. The raw JSON answers
+(`evidence/guard_probe_results.json`) are in the repository.
 
 ---
 
