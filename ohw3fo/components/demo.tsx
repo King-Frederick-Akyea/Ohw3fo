@@ -194,7 +194,7 @@ function TurnRow({
     <section className="rise">
       <div className="mb-3 max-w-[760px]">
         <p className="mb-1 text-[12.5px] font-medium text-ink-faint">{sender && sender !== "You" ? `From ${sender}` : "You wrote"}</p>
-        <p className="rounded-xl rounded-tl-sm bg-surface px-4 py-3 font-read text-[16px] leading-relaxed shadow-card">{turn.text}</p>
+        <p className="rounded-xl rounded-tl-sm bg-surface px-4 py-3 font-read text-[16px] leading-relaxed shadow-card transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">{turn.text}</p>
       </div>
       <div className="grid items-stretch gap-3 md:grid-cols-2">
         <OutcomeCard side="baseline" turn={turn} kind={kind} lang={demo.settings.lang} vault={demo.vault} onInspect={() => onInspect("baseline")} />

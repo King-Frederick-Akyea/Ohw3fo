@@ -3,6 +3,7 @@
 import { ListVideo } from "lucide-react";
 import { Shield } from "./ui";
 import { SettingsMenu } from "./settings-menu";
+import { ThemeToggle } from "./theme-toggle";
 import type { Score, Settings, Usage } from "./use-demo";
 
 interface Props {
@@ -48,6 +49,7 @@ export function Header({ scores, settings, onSettings, usage, busy, onStartOver,
             <ScoreMeter label="With Ɔhwɛfo" value={shield} total={total} tone="safe" />
           </div>
         )}
+        <ThemeToggle />
         <SettingsMenu settings={settings} onChange={onSettings} usage={usage} busy={busy} onStartOver={onStartOver} />
       </div>
     </header>

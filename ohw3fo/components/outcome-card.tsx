@@ -27,7 +27,7 @@ export function OutcomeCard({ side, turn, kind, lang, vault, onInspect }: Props)
 
   return (
     <article
-      className={`flex min-w-0 flex-col overflow-hidden rounded-xl border bg-surface shadow-card ${
+      className={`group flex min-w-0 flex-col overflow-hidden rounded-xl border bg-surface shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
         isShield ? "border-forest/40" : "border-line"
       }`}
       aria-label={SIDE_LABEL[side]}
